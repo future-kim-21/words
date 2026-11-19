@@ -77,6 +77,8 @@ div.school{background:var(--glass-strong);border:1px solid var(--edge);border-ra
 .dir:hover{color:var(--ink)}
 .dir:active{transform:scale(.97)}
 .dir.on{background:var(--accent);color:#fff;font-weight:700}
+.dir.wide{grid-column:1 / -1}
+.dir.wide small{white-space:normal}
 .section-label{font-size:13px;font-weight:700;color:var(--ink-soft);margin:14px 4px 8px}
 .chip{font:inherit;color:inherit;cursor:pointer;text-align:center;min-width:0;padding:12px 4px;border-radius:17px;
   font-size:clamp(12.5px,3.1vw,15px);font-weight:600;line-height:1.3;word-break:keep-all;
@@ -176,6 +178,7 @@ div.school{background:var(--glass-strong);border:1px solid var(--edge);border-ra
 .rv.ok .mark{color:var(--ok)} .rv.no .mark{color:var(--no)}
 .rv .body{flex:1;min-width:0}
 .rv .w{font-weight:700;font-size:15px}
+.rv .w.def{font-weight:600;font-size:14px;line-height:1.45}
 .rv .m{color:var(--ink-soft);font-size:13.5px;margin-top:2px}
 .rv .chosen{color:var(--no);font-size:13px;margin-top:2px}
 .result-actions{margin-top:20px;display:flex;flex-direction:column;gap:10px}
@@ -1208,6 +1211,76 @@ belief	n. 믿음, 신념
 stereotype	n. 고정관념
 ` }
         ]
+      },
+      {
+        label: '외부지문 — 영어인포그래픽',
+        days: [
+          { name:'인포그래픽', words: `
+feedback	피드백, 의견, 조언	advice or criticism about how someone is doing their work
+constructive	건설적인, 도움이 되는	intended to be helpful or useful, not negative
+peer review	동료 검토, 또래 피드백	the process of having your work checked by someone at the same level as you
+positive	긍정적인	good or useful in qualities, results, or effects
+criticism	비판, 비평	the act of expressing disapproval or judging the merits and faults of something
+specific	구체적인	clearly defined and dealing with one particular subject, not general
+vague	모호한, 불분명한	not clearly expressed or defined
+suggestion	제안	an idea or plan that you offer for someone to consider
+perspective	관점, 시각	a particular way of thinking about something
+command	명령하다, 지시하다	to give an order to someone or to order that something be done
+revision	수정, 개정	the process of making changes to a piece of writing in order to improve it
+re-seeing	다시 보기, 새로운 시각으로 다시 살펴보기	the act of looking at something again with a new perspective
+defensive	방어적인, 비판을 받아들이지 않으려는	too quick to protect yourself from criticism or attack
+concern	관심사, 중요한 문제	a matter of interest or importance to someone
+HOCs	고차원적 문제(논제, 주장, 근거 등 글의 큰 그림에 관한 문제)	major issues in writing such as thesis, argument, organization, and evidence
+LOCs	저차원적 문제(문법, 철자, 구두점 등 문장 수준의 문제)	minor issues in writing such as grammar, spelling, and punctuation
+effectively	효과적으로	in a way that produces a desired or intended result
+embrace	받아들이다, 기꺼이 수용하다	to accept a new idea, opinion, or belief with enthusiasm
+persuasive	설득력 있는	able to make someone do or believe something
+continuous	지속적인, 계속되는	going on without interruption
+feedback	피드백, 의견	advice or criticism about how someone is doing their work
+specific	구체적인	clearly defined and dealing with one particular subject, not vague or general
+precise	정확한, 정밀한	exact and accurate in every detail
+relevant	관련 있는, 적절한	directly connected to the subject or argument being discussed
+infographic	인포그래픽(정보, 데이터, 지식의 시각적 표현물)	a visual representation of information, data, or knowledge
+complex	복잡한, 여러 부분으로 구성된	consisting of many different and connected parts
+visual	시각적인, 시각에 관한	relating to seeing or sight
+representation	표현, 묘사, 나타냄	the act of presenting or describing something
+minimal	최소한의, 아주 적은	very small in amount; the least possible
+convey	전달하다, 전하다	to communicate (a message or information)
+appeal	매력, 호소력	the quality of being attractive or interesting
+factual	사실에 근거한, 사실적인	based on or consisting of facts
+illustrate	설명하다, 그림으로 나타내다	to explain or make clear by using examples, pictures, or diagrams
+insight	통찰력, 이해	the ability to understand people and situations in a clear, often sudden, way
+takeaway	핵심 교훈, 주요 요점	a key point or lesson to be learned
+infographic	인포그래픽	a visual representation of information, data, or knowledge
+effective	효과적인, 효율적인	producing a desired or intended result
+appealing	매력적인, 흥미로운	attractive or interesting
+simplicity	단순함, 간결함	the quality of being easy to understand or do
+overcrowding	너무 많이 채워 넣음, 과밀	filling a space too much or with too many things
+relevant	관련 있는, 적절한	directly connected to the subject or argument being discussed
+illustrate	설명하다, 그림으로 나타내다	to explain or make clear by using examples, pictures, or diagrams
+bar chart	막대 차트(그래프)	a graph that uses horizontal or vertical bars to compare categories
+pie chart	원형 차트(그래프)	a circular chart divided into sectors, showing the relative sizes of data
+typography	타이포그래피, 글꼴 배열 및 디자인	the style and appearance of printed matter; the art of arranging type
+hierarchy	위계, 계층 구조	a system in which people or things are arranged in a series of levels, one above the other
+consistent	일관된, 일관성 있는	always behaving or happening in the same way
+contrasting	대조적인, 대비되는	different in a way that is easy to see or notice
+harmonious	조화로운, 균형 잡힌	forming a pleasing or consistent whole
+engaging	흥미로운, 매력적인	interesting or attractive
+persuasive	설득력 있는	able to make someone do or believe something
+confident	자신 있는, 확신에 찬	feeling or showing certainty about something
+persuade	설득하다	to make someone do or believe something by giving them good reasons
+audience	청중, 관객	the people who are watching or listening to a presentation
+deliver	(발표/연설을)하다, 전달하다	to give a speech or presentation
+nerve-wracking	긴장되는, 불안을 유발하는	causing a lot of worry or anxiety
+evidence	근거, 증거	facts or information that show whether something is true or valid
+structure	구성하다; 구조, 체계	to arrange or organize something in a particular way (Verb); the way in which parts of something are arranged or organized (Noun)
+restate	다시 말하다, 재진술하다	to say something again in a different way
+call to action	행동 촉구	a message designed to make someone do something
+engage	참여시키다, 관심을 끌다	to attract someone's attention and keep them interested
+moderate	적당한, 중간 정도의	not extreme or excessive
+visual aid	시각 자료, 시각 보조물	an object, device, or picture used by a speaker to illustrate or emphasize points
+` }
+        ]
       }
     ]
   },
@@ -1683,8 +1756,8 @@ distinguished	adj. 뛰어난, 저명한
     String(txt||'').split(/\r?\n/).forEach(function(line){
       var p=line.split('\t');
       if(p.length<2) return;
-      var en=p[0].trim(), ko=p.slice(1).join(' ').trim();
-      if(en && ko) out.push({en:en, ko:ko, day:day});
+      var en=p[0].trim(), ko=(p[1]||'').trim(), def=(p[2]||'').trim();
+      if(en && ko) out.push(def ? {en:en, ko:ko, def:def, day:day} : {en:en, ko:ko, day:day});
     });
     return out;
   }
@@ -1706,6 +1779,8 @@ distinguished	adj. 뛰어난, 저명한
     BOOKS.forEach(function(b, bi){
       var total=b.days.reduce(function(s,d){ return s+d.list.length; },0);
       var usable=b.days.filter(function(d){ return d.list.length; });
+      var defSecs=b.sections.filter(function(sec){ return sec.days.some(function(d){ return d.list.some(function(w){ return w.def; }); }); });
+      var hasDef=defSecs.length>0;
       var sel={};
 
       var det=document.createElement('div'); det.className='school'+(BOOKS.length===1?' open':'');
@@ -1720,6 +1795,7 @@ distinguished	adj. 뛰어난, 저명한
             '<button class="dir" data-dir="KE">한글 → 영어<small>객관식</small></button>'+
             '<button class="dir" data-dir="INSTANT">⚡ 즉시 확인<small>객관식</small></button>'+
             '<button class="dir" data-dir="WR">✍️ 한글 → 영어<small>주관식</small></button>'+
+            (hasDef?'<button class="dir wide" data-dir="DEF">📖 영영풀이 → 영어<small>객관식 · '+esc(defSecs.map(function(sec){ return sec.label.replace(/^[^—]+ — /,''); }).join(', '))+'만</small></button>':'')+
           '</div>'+
           '<div data-role="range"></div>'+
           '<div class="count-picker">'+
@@ -1795,6 +1871,10 @@ distinguished	adj. 뛰어난, 저명한
       function go(){
         var p=pool();
         if(!p.length){ err.textContent='범위를 하나 이상 선택하세요.'; return; }
+        if(dir==='DEF'){
+          p=p.filter(function(w){ return w.def; });
+          if(!p.length){ err.textContent='영영풀이 모드는 '+defSecs.map(function(sec){ return sec.label.replace(/^[^—]+ — /,''); }).join(', ')+' 범위를 골라야 해요.'; return; }
+        }
         var n=parseInt(inp.value,10);
         if(!n||n<1){ err.textContent='1 이상의 숫자를 입력하세요.'; inp.focus(); return; }
         if(n>p.length){ err.textContent='선택한 범위에서는 최대 '+p.length.toLocaleString()+'문제까지 가능해요.'; return; }
@@ -1808,6 +1888,7 @@ distinguished	adj. 뛰어난, 저명한
           names.push(short+' '+(ds.length===su.length?'전체':ds.map(function(d){ return d.name; }).join('·')));
         });
         var all=[]; b.days.forEach(function(d){ all=all.concat(d.list); });
+        if(dir==='DEF') all=all.filter(function(w){ return w.def; });
         startQuiz(b.title+' · '+(allOn()?'전체':names.join(' / ')), shuffle(p.slice()).slice(0,n), dir, all, instant);
       }
       startBtn.onclick=go;
@@ -1848,16 +1929,17 @@ distinguished	adj. 뛰어난, 저명한
     setProgress(state.idx);
     state.qDir= state.dir==='MIX' ? (Math.random()<.5?'EK':'KE') : state.dir;
     if(state.qDir==='WR'){ renderWrite(q); return; }
-    var EK= state.qDir==='EK';
-    $('quizEyebrow').textContent= EK ? '다음 단어의 뜻은?' : '다음 뜻의 영단어는?';
-    $('quizWord').textContent= EK ? q.en : q.ko;
-    $('quizWord').style.fontSize= EK ? '' : 'clamp(20px,5.4vw,26px)';
+    var EK= state.qDir==='EK', DEF= state.qDir==='DEF';
+    $('quizEyebrow').textContent= EK ? '다음 단어의 뜻은?' : DEF ? '다음 영영풀이에 해당하는 단어는?' : '다음 뜻의 영단어는?';
+    $('quizWord').textContent= EK ? q.en : DEF ? q.def : q.ko;
+    $('quizWord').style.fontSize= EK ? '' : DEF ? 'clamp(17px,4.4vw,21px)' : 'clamp(20px,5.4vw,26px)';
+    $('quizWord').style.lineHeight= DEF ? '1.45' : '';
 
     /* 뜻이 겹치는 단어(유의어)는 오답 보기에서 제외 → 복수정답 방지 */
     var qTok={}; q.ko.split(/[,/]/).forEach(function(t){ t=t.trim(); if(t) qTok[t]=1; });
     var overlaps=function(x){ return x.ko.split(/[,/]/).some(function(t){ return qTok[t.trim()]; }); };
     var used={}; used[EK?q.ko:q.en]=1;
-    var cands=shuffle(state.schoolAll.filter(function(x){ return x.en!==q.en && x.ko!==q.ko && !overlaps(x); }));
+    var cands=shuffle(state.schoolAll.filter(function(x){ return x.en.toLowerCase()!==q.en.toLowerCase() && x.ko!==q.ko && !overlaps(x) && (!DEF || x.def!==q.def); }));
     var opts=[EK?q.ko:q.en];
     for(var i=0;i<cands.length && opts.length<4;i++){
       var v=EK?cands[i].ko:cands[i].en;
@@ -1884,7 +1966,7 @@ distinguished	adj. 뛰어난, 저명한
       btn.classList.add('picked');
     }
     if(ok) state.correct++; else state.wrong.push(q);
-    state.records.push({en:q.en, ko:q.ko, chosen:chosen, ok:ok, d:state.qDir});
+    state.records.push({en:q.en, ko:q.ko, def:q.def, chosen:chosen, ok:ok, d:state.qDir});
     setProgress(state.idx+1);
     next(!state.instant ? 350 : (ok ? 1000 : 2200));
   }
@@ -1969,11 +2051,11 @@ distinguished	adj. 뛰어난, 저명한
     if(wrongs.length){
       h+='<details open><summary><span class="arrow">▶</span>❌ 틀린 단어 '+wrongs.length+'개</summary><div class="rv-body">'+
         wrongs.map(function(r){
-          var ek=r.d==='EK';
+          var ek=r.d==='EK', df=r.d==='DEF';
           return '<div class="rv no"><span class="mark">✗</span><div class="body">'+
-            '<div class="w">'+esc(ek?r.en:r.ko)+'</div>'+
+            '<div class="w'+(df?' def':'')+'">'+esc(ek?r.en:df?r.def:r.ko)+'</div>'+
             '<div class="chosen">'+(r.d==='WR'?'내가 쓴 답: ':'내가 고른 답: ')+esc(r.chosen)+'</div>'+
-            '<div class="m">정답: '+esc(ek?r.ko:r.en)+'</div></div></div>';
+            '<div class="m">정답: '+esc(ek?r.ko:df?(r.en+' ('+r.ko+')'):r.en)+'</div></div></div>';
         }).join('')+'</div></details>';
     }
     if(rights.length){
